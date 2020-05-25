@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="reslt"></p>
+<script>
+    let count = 0;
+    for ( let i = 0; i <= 100;i++){
+        if (i % 3 === 0 || i % 7 === 0){
+            document.write(i + "<br>");
+            count++;
+        }
+    }
+     document.getElementById("result").innerHTML = count +"các số chia hết cho 3 và 7";
+</script>
+</body>
+</html>

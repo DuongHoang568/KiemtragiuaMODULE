@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+ let array = [];
+ let number = parseInt(prompt("số phần tử của mảng:"));
+ for (let i = 0; i < number;i++){
+     odd = prompt("phần tủ " + i);
+         array.push(odd);
+ }
+ document.write("Các phần tử trong mảng là :" + array +"<br>");
+  function oddArr(arr) {
+      let sum = 0;
+      oddArr = "";
+      for (let i = 0; i < arr.length; i++){
+          if (arr[i] % 2 != 0){
+              sum += arr[i];
+              odd += arr[i] + "<br>";
+          }
+      }
+      document.write("các số lẻ trong mảng là :" + sum);
+  }
+  oddArr(array);
+</script>
+</body>
+</html>

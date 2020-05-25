@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xây dựn hàm tính tuổi</title>
+</head>
+<body>
+<script>
+    function tinhTuoi(year) {
+        if (2020 < year){
+            alert("Năm sinh không hợp lệ! hoặc lớn hơn năm hiện tại");
+        }
+        let age = 2020 - year;
+        return age;
+    }
+    let namsinh = parseInt(prompt("nhập năm sinh cần kiểm tra tuổi"));
+    let tuoi = tinhTuoi(namsinh);
+    document.write(tuoi +" tuổi");
+</script>
+</body>
+</html>
